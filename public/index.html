@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Step Registration Form </title>
+</head>
+
+<body>
+    <div class="container">
+
+
+        <form action="register" method="POST">
+            <div id="form1">
+                <div class="content">
+                    <label for="">Name<span class="required"></span></label><br>
+                    <input type="text" placeholder="Firstname" class="half" name="firstname" required>
+                    <input type="text" placeholder="Lastname" class="half" name="lastname" required>
+                </div>
+                <div class="content">
+                    <label for="">Date Of Birth<span class="required"></span></label><br>
+                    <input type="date" class="full" name="dob" required>
+                </div>
+                <div class="content">
+                    <label for="">Email<span class="required"></span></label><br>
+                    <input type="email" placeholder="Email" class="full" name="email" required>
+                </div>
+                <div class="content">
+                    <label for="">Father Name<span class="required"></span></label><br>
+                    <input type="text" placeholder="Firstname" class="half" name="firstnamef" required>
+                    <input type="text" placeholder="Lastname" class="half" name="lastnamef" required>
+                </div>
+                <div class="content">
+                    <label for="">Mother Name<span class="required"></span></label><br>
+                    <input type="text" placeholder="Firstname" class="half" name="firstnamem" required>
+                    <input type="text" placeholder="Lastname" class="half" name="lastnamem" required>
+                </div>
+                <div class="content">
+                    <label for="">Gender<span class="required"></span></label> <br>
+                    <input type="radio" name="gender" value="M" required> <span>M</span> <br>
+                    <input type="radio" name="gender" value="F" required> <span>F</span>
+                </div>
+                <div class="content">
+                    <label for="">Nationality<span class="required"></span></label><br>
+                    <input type="text" placeholder="eg-'Indian'" class="full" name="nationality" required>
+                </div>
+                <div class="content">
+                    <label for="">Home Adress<span class="required"></span></label><br>
+                    <input type="text" class="full" placeholder="Street" name="street" required>
+                    <input type="text" class="half" placeholder="City" name="city" required>
+
+                    <select id="city" class="half" name="country" required>
+                        <option value="india">INDIA</option>
+                        <option value="usa">USA</option>
+                        <option value="uk">UK</option>
+                        <option value="china">CHINA</option>
+                    </select>
+
+                </div>
+                <div class="content">
+                    <label for="">TELIPHONE</span></label><br>
+                    <input type="number" placeholder="### ### ####" class="full" name="phone">
+                </div>
+                <div class="content">
+                    <label for="">MOBILE<span class="required"></span></label><br>
+                    <input type="number" class="full" placeholder="### ### ####" name="mob" required>
+                </div>
+
+                <div class="btn">
+                    <button type="button" id="next">Next</button>
+                </div>
+            </div>
+
+            <div id="form2">
+                <div class="content">
+                    <label for=""> HSC Institution Name<span class="required"></span></label><br>
+                    <input type="text" placeholder="HSC Institution" class="full" name="hsc" required>
+                </div>
+                <div class="content">
+                    <label for="">HSC Board<span class="required"></span></label><br>
+                    <select id="HSC" class="full" name="HSC_Board" required>
+                        <option value="">Select Board</option>
+                        <option value="CBSE">CBSE</option>
+                        <option value="ICSE">ICSE</option>
+                        <option value="STATE_BOARD">State Board</option>
+                        <option value="OTHER">OTHER</option>
+                    </select>
+                </div>
+                <div class="content">
+                    <label for="">Score in HSC in percentage<span class="required"></span></label><br>
+                    <input type="number" class="full" placeholder="%" name="hscp" required>
+                </div>
+                <div class="content">
+                    <label for=""> SSC Institution name<span class="required"></span></label><br>
+                    <input type="text" placeholder="SSC Institution" class="full" name="ssc" required>
+                </div>
+                <div class="content">
+                    <label for="">SSC Board<span class="required"></span></label><br>
+                    <select id="SSC" class="full" name="SSC_Board" required>
+                        <option value="">Select Board</option>
+                        <option value="CBSE">CBSE</option>
+                        <option value="ICSE">ICSE</option>
+                        <option value="STATE_BOARD">State Board</option>
+                        <option value="OTHER">OTHER</option>
+                    </select>
+                </div>
+                <div class="content">
+                    <label for="">Score in SSC in percentage<span class="required"></span></label><br>
+                    <input type="number" class="full" placeholder="%" name="sscp" required>
+                </div>
+                <div class="content">
+                    <label for="">Currently pursuing<span class="required"></span></label><br>
+                    <select id="graduation" class="full" name="Current_Board" required>
+                        <option value="">Select Stream</option>
+                        <option value="BSC">BSC</option>
+                        <option value="BCA">BCA</option>
+                        <option value="BE">BE </option>
+                        <option value="BTECH">BTECH</option>
+                    </select>
+                </div>
+                <div class="content">
+                    <label for="">Current Educational Institution Name<span class="required"></span></label><br>
+                    <input type="text" class="full" placeholder="Institution Name" name="current" required>
+                </div>
+                <div class="content">
+                    <label for="">Overall Percentage<span class="required"></span></label><br>
+                    <input type="number" class="full" placeholder="%" name="currentp" required>
+                </div>
+                <div class="content">
+                    <label for="">Current backlogs if any</label><br>
+                    <input type="number" class="full" name="backlog">
+                </div>
+
+
+
+                <div class="btn">
+                    <button type="button" id="back"> back</button>
+                    <button type="button" id="next1">next</button>
+                </div>
+            </div>
+
+
+            <div id="form3">
+                <div class="content">
+                    <label> Recent Photo</label><br>
+                    <input type="file">
+                </div>
+                <div class="content">
+                    <label> HSC Certificate</label><br>
+                    <input type="file">
+                </div>
+                <div class="content">
+                    <label> SSC Certificate</label><br>
+                    <input type="file">
+                </div>
+                <div class="content">
+                    <label> All Semistar Certificate</label><br>
+                    <input type="file">
+                </div>
+                <div class="btn">
+                    <button type="button" id="back1"> back</button>
+                    <button type="submit">submit</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+
+
+
+    <script>
+        let form1 = document.getElementById('form1');
+        let form2 = document.getElementById('form2');
+        let form3 = document.getElementById('form3');
+
+        let next = document.getElementById("next");
+        let back = document.getElementById("back");
+        let next1 = document.getElementById("next1");
+        let back1 = document.getElementById("back1");
+
+
+
+        next.addEventListener("click", () => {
+            form1.style.left = "2000px";
+            form2.style.left = " 0px";
+        })
+        back.addEventListener("click", () => {
+            form1.style.left = "0px";
+            form2.style.left = " 2000px";
+
+        })
+        next1.addEventListener("click", () => {
+            form2.style.left = "2000px";
+            form3.style.left = " 0px";
+
+        })
+        back1.addEventListener("click", () => {
+            form2.style.left = "0px";
+            form3.style.left = " 2000px";
+
+        })
+
+    </script>
+
+</body>
+
+</html>

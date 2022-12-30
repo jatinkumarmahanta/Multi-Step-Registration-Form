@@ -1,0 +1,75 @@
+*{
+  margin: 0px;
+  padding: 0px;
+ 
+}
+body{
+  background-color: rgb(14, 217, 217);
+}
+
+.container{
+ max-width: 70vw;
+  height: 100vh;
+  margin: 8px auto;
+  background: rgb(255, 255, 255);
+  position:relative;
+  padding: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.container #form1, #form2, #form3{
+max-height: 100%;
+width: 100%;
+padding: 20px;
+position: absolute;
+top: 0px;
+left: 0px;
+transition: 1s;
+background-color: #fff;
+}
+form input{
+  padding: 2px 2px;
+  border-bottom: 1px solid red;
+  margin:10px 5px;
+  outline: none;
+  background: transparent;
+}
+.content{
+  display: block;
+  width: 100%;
+}
+
+.full{
+  width: 90%;
+}
+.half{
+  width: 44%;
+}
+
+#form2{
+  left: 2000px;
+}
+#form3{
+  left: 2000px;
+  
+  
+}
+.btn{
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-around;
+}
+form button{
+  width: 110px;
+  height: 35px;
+  margin: 0 10px;
+  border-radius: 15px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.required::after{
+  content: "*";
+  color: red;
+}
