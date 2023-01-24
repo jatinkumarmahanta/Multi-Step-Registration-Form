@@ -1,17 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300&display=swap');
 *{
   margin: 0px;
   padding: 0px;
- 
+  font-family: 'Source Code Pro', monospace;
 }
 body{
-  background-color: rgb(14, 217, 217);
+  background-color: rgba(100, 190, 239, 0.514);
 }
 
 .container{
  max-width: 70vw;
   height: 100vh;
   margin: 8px auto;
-  background: rgb(255, 255, 255);
+  background: rgb(237, 234, 245);
   position:relative;
   padding: 10px;
   border-radius: 10px;
@@ -25,11 +26,11 @@ position: absolute;
 top: 0px;
 left: 0px;
 transition: 1s;
-background-color: #fff;
+background-color: rgb(237, 234, 245);
 }
 form input{
-  padding: 2px 2px;
-  border-bottom: 1px solid red;
+  padding: 1px 2px;
+  border-bottom: 2px solid red;
   margin:10px 5px;
   outline: none;
   background: transparent;
@@ -60,6 +61,8 @@ form input{
   justify-content: space-around;
 }
 form button{
+  background-color: rgb(211 36 212 / 59%);
+    color: aliceblue;
   width: 110px;
   height: 35px;
   margin: 0 10px;
@@ -68,8 +71,16 @@ form button{
   outline: none;
   cursor: pointer;
 }
+form button:hover{
+  background-color: aliceblue;
+  color:rgb(39, 20, 91);
+  box-shadow: 2px 2px 2px 2px  rgb(211 36 212 / 59%);
+}
+.required, .optional{
+  font-weight: bold;
+  color: red;
+}
 
 .required::after{
   content: "*";
-  color: red;
 }

@@ -1,211 +1,522 @@
 <!DOCTYPE html>
-
 <html lang="en" dir="ltr">
-
 <head>
-    <meta charset="UTF-8">
-
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multi-Step Registration Form </title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Multi-Page Registration Form </title>
 </head>
 
 <body>
-    <div class="container">
+  <div class="container">
+    <form action="register" method="POST" name="myform" id="form">
+      <div id="form1">
+        <div class="content">
+          <label for="">Name<span class="required" id="name"></span></label><br>
+          <input type="text" placeholder="Firstname" class="half" name="firstname">
+          <input type="text" placeholder="Lastname" class="half" name="lastname">
+        </div>
+        <div class="content">
+          <label for="">Date Of Birth<span class="required" id="dob"></span></label><br>
+          <input type="date" class="full" name="dob">
+        </div>
+        <div class="content">
+          <label for="">Email<span class="required" id="email"></span></label><br>
+          <input type="email" placeholder="Email" class="full" name="email">
+        </div>
+        <div class="content">
+          <label for="">Father Name<span class="required" id="fathername"></span></label><br>
+          <input type="text" placeholder="Firstname" class="half" name="firstnamef">
+          <input type="text" placeholder="Lastname" class="half" name="lastnamef">
+        </div>
+        <div class="content">
+          <label for="">Mother Name<span class="required" id="mothername"></span></label><br>
+          <input type="text" placeholder="Firstname" class="half" name="firstnamem">
+          <input type="text" placeholder="Lastname" class="half" name="lastnamem">
+        </div>
+        <div class="content">
+          <label for="">Gender<span class="required" id="gender"></span></label> <br>
+          <input type="radio" name="gender" value="M"> <span>M</span> <br>
+          <input type="radio" name="gender" value="F"> <span>F</span>
+        </div>
+        <div class="content">
+          <label for="">Nationality<span class="required" id="nationality"></span></label><br>
+          <input type="text" placeholder="eg-'Indian'" class="full" name="nationality">
+        </div>
+        <div class="content">
+          <label for="">Home Adress<span class="required" id="adress"></span></label><br>
+          <input type="text" class="full" placeholder="Street" name="street">
+          <input type="text" class="half" placeholder="City" name="city">
+          <select class="half" name="country">
+            <option value="">SELECT ONE</option>
+            <option value="india">INDIA</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+            <option value="china">CHINA</option>
+          </select>
+        </div>
+        <div class="content">
+          <label for="">TELIPHONE <span id="phone" class="optional"></span></label><br>
+          <input type="number" placeholder="### ### ####" class="full" name="phone">
+        </div>
+        <div class="content">
+          <label for="">MOBILE<span class="required" id="mobile"></span></label><br>
+          <input type="number" class="full" placeholder="### ### ####" name="mob">
+        </div>
+        <div class="btn">
+          <button type="button" id="next">Next</button>
+        </div>
+      </div>
+      <div id="form2">
+        <div class="content">
+          <label for=""> HSC Institution Name<span class="required" id="hsc"></span></label><br>
+          <input type="text" placeholder="HSC Institution" class="full" name="hsc">
+        </div>
+        <div class="content">
+          <label for="">HSC Board<span class="required" id="hscboard"></span></label><br>
+          <select id="HSC" class="full" name="HSC_Board">
+            <option value="">Select Board</option>
+            <option value="CBSE">CBSE</option>
+            <option value="ICSE">ICSE</option>
+            <option value="STATE_BOARD">State Board</option>
+            <option value="OTHER">OTHER</option>
+          </select>
+        </div>
+        <div class="content">
+          <label for="">Score in HSC in %<span class="required" id="hscp"></span></label><br>
+          <input type="number" class="full" placeholder="%" name="hscp">
+        </div>
+        <div class="content">
+          <label for=""> SSC Institution name<span class="required" id="ssc"></span></label><br>
+          <input type="text" placeholder="SSC Institution" class="full" name="ssc">
+        </div>
+        <div class="content">
+          <label for="">SSC Board<span class="required" id="sscboard"></span></label><br>
+          <select id="SSC" class="full" name="SSC_Board">
+            <option value="">Select Board</option>
+            <option value="CBSE">CBSE</option>
+            <option value="ICSE">ICSE</option>
+            <option value="STATE_BOARD">State Board</option>
+            <option value="OTHER">OTHER</option>
+          </select>
+        </div>
+        <div class="content">
+          <label for="">Score in SSC in percentage<span class="required" id="sscp"></span></label><br>
+          <input type="number" class="full" placeholder="%" name="sscp">
+        </div>
+        <div class="content">
+          <label for="">Currently pursuing<span class="required" id="currentboard"></span></label><br>
+          <select id="graduation" class="full" name="Current_Board">
+            <option value="">Select Stream</option>
+            <option value="BSC">BSC</option>
+            <option value="BCA">BCA</option>
+            <option value="BE">BE </option>
+            <option value="BTECH">BTECH</option>
+          </select>
+        </div>
+        <div class="content">
+          <label for="">Current Educational Institution Name<span class="required" id="current"></span></label><br>
+          <input type="text" class="full" placeholder="Institution Name" name="current">
+        </div>
+        <div class="content">
+          <label for="">Overall Percentage<span class="required" id="currentp"></span></label><br>
+          <input type="number" class="full" placeholder="%" name="currentp">
+        </div>
+        <div class="content">
+          <label for="">Current backlogs if any <span id="backlog" class="optional"></span></label><br>
+          <input type="number" class="full" name="backlog">
+        </div>
+        <div class="btn">
+          <button type="button" id="back"> back</button>
+          <button type="button" id="next1">next</button>
+        </div>
+      </div>
+      <div id="form3">
+        <div class="content">
+          <label> Recent Photo</label><br>
+          <input type="file">
+        </div>
+        <div class="content">
+          <label> HSC Certificate</label><br>
+          <input type="file">
+        </div>
+        <div class="content">
+          <label> SSC Certificate</label><br>
+          <input type="file">
+        </div>
+        <div class="content">
+          <label> All Semistar Certificate</label><br>
+          <input type="file">
+        </div>
+        <div class="btn">
+          <button type="button" id="back1"> back</button>
+          <button type="submit">submit</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <script>
+
+    let form1 = document.getElementById('form1');
+    let form2 = document.getElementById('form2');
+    let form3 = document.getElementById('form3');
+
+    let next = document.getElementById("next");
+    let back = document.getElementById("back");
+    let next1 = document.getElementById("next1");
+    let back1 = document.getElementById("back1");
+    const FORM = document.getElementById('form');
+
+    function errormsg(id, message) {
+      document.getElementById(id).innerHTML = message;
+    }
+
+    function nextpage1() {
+      form1.style.left = "-2000px";
+      form2.style.left = " 0px";
+    }
+
+    function nextpage2() {
+      form2.style.left = "-2000px";
+      form3.style.left = " 0px";
+    }
+
+    function verify(input) {
+      var x = input;
+      var atposition = x.indexOf("@");
+      var dotposition = x.lastIndexOf(".");
+      if (atposition < 1 || dotposition < atposition + 2 || dotposition + 2 >= x.length) {
+        return true;
+      }
+      else {
+        return false;
+      }
+    }
 
 
-        <form action="register" method="POST">
-            <div id="form1">
-                <div class="content">
-                    <label for="">Name<span class="required"></span></label><br>
-                    <input type="text" placeholder="Firstname" class="half" name="firstname" required>
-                    <input type="text" placeholder="Lastname" class="half" name="lastname" required>
-                </div>
-                <div class="content">
-                    <label for="">Date Of Birth<span class="required"></span></label><br>
-                    <input type="date" class="full" name="dob" required>
-                </div>
-                <div class="content">
-                    <label for="">Email<span class="required"></span></label><br>
-                    <input type="email" placeholder="Email" class="full" name="email" required>
-                </div>
-                <div class="content">
-                    <label for="">Father Name<span class="required"></span></label><br>
-                    <input type="text" placeholder="Firstname" class="half" name="firstnamef" required>
-                    <input type="text" placeholder="Lastname" class="half" name="lastnamef" required>
-                </div>
-                <div class="content">
-                    <label for="">Mother Name<span class="required"></span></label><br>
-                    <input type="text" placeholder="Firstname" class="half" name="firstnamem" required>
-                    <input type="text" placeholder="Lastname" class="half" name="lastnamem" required>
-                </div>
-                <div class="content">
-                    <label for="">Gender<span class="required"></span></label> <br>
-                    <input type="radio" name="gender" value="M" required> <span>M</span> <br>
-                    <input type="radio" name="gender" value="F" required> <span>F</span>
-                </div>
-                <div class="content">
-                    <label for="">Nationality<span class="required"></span></label><br>
-                    <input type="text" placeholder="eg-'Indian'" class="full" name="nationality" required>
-                </div>
-                <div class="content">
-                    <label for="">Home Adress<span class="required"></span></label><br>
-                    <input type="text" class="full" placeholder="Street" name="street" required>
-                    <input type="text" class="half" placeholder="City" name="city" required>
 
-                    <select id="city" class="half" name="country" required>
-                        <option value="india">INDIA</option>
-                        <option value="usa">USA</option>
-                        <option value="uk">UK</option>
-                        <option value="china">CHINA</option>
-                    </select>
-
-                </div>
-                <div class="content">
-                    <label for="">TELIPHONE</span></label><br>
-                    <input type="number" placeholder="### ### ####" class="full" name="phone">
-                </div>
-                <div class="content">
-                    <label for="">MOBILE<span class="required"></span></label><br>
-                    <input type="number" class="full" placeholder="### ### ####" name="mob" required>
-                </div>
-
-                <div class="btn">
-                    <button type="button" id="next">Next</button>
-                </div>
-            </div>
-
-            <div id="form2">
-                <div class="content">
-                    <label for=""> HSC Institution Name<span class="required"></span></label><br>
-                    <input type="text" placeholder="HSC Institution" class="full" name="hsc" required>
-                </div>
-                <div class="content">
-                    <label for="">HSC Board<span class="required"></span></label><br>
-                    <select id="HSC" class="full" name="HSC_Board" required>
-                        <option value="">Select Board</option>
-                        <option value="CBSE">CBSE</option>
-                        <option value="ICSE">ICSE</option>
-                        <option value="STATE_BOARD">State Board</option>
-                        <option value="OTHER">OTHER</option>
-                    </select>
-                </div>
-                <div class="content">
-                    <label for="">Score in HSC in percentage<span class="required"></span></label><br>
-                    <input type="number" class="full" placeholder="%" name="hscp" required>
-                </div>
-                <div class="content">
-                    <label for=""> SSC Institution name<span class="required"></span></label><br>
-                    <input type="text" placeholder="SSC Institution" class="full" name="ssc" required>
-                </div>
-                <div class="content">
-                    <label for="">SSC Board<span class="required"></span></label><br>
-                    <select id="SSC" class="full" name="SSC_Board" required>
-                        <option value="">Select Board</option>
-                        <option value="CBSE">CBSE</option>
-                        <option value="ICSE">ICSE</option>
-                        <option value="STATE_BOARD">State Board</option>
-                        <option value="OTHER">OTHER</option>
-                    </select>
-                </div>
-                <div class="content">
-                    <label for="">Score in SSC in percentage<span class="required"></span></label><br>
-                    <input type="number" class="full" placeholder="%" name="sscp" required>
-                </div>
-                <div class="content">
-                    <label for="">Currently pursuing<span class="required"></span></label><br>
-                    <select id="graduation" class="full" name="Current_Board" required>
-                        <option value="">Select Stream</option>
-                        <option value="BSC">BSC</option>
-                        <option value="BCA">BCA</option>
-                        <option value="BE">BE </option>
-                        <option value="BTECH">BTECH</option>
-                    </select>
-                </div>
-                <div class="content">
-                    <label for="">Current Educational Institution Name<span class="required"></span></label><br>
-                    <input type="text" class="full" placeholder="Institution Name" name="current" required>
-                </div>
-                <div class="content">
-                    <label for="">Overall Percentage<span class="required"></span></label><br>
-                    <input type="number" class="full" placeholder="%" name="currentp" required>
-                </div>
-                <div class="content">
-                    <label for="">Current backlogs if any</label><br>
-                    <input type="number" class="full" name="backlog">
-                </div>
-
-
-
-                <div class="btn">
-                    <button type="button" id="back"> back</button>
-                    <button type="button" id="next1">next</button>
-                </div>
-            </div>
-
-
-            <div id="form3">
-                <div class="content">
-                    <label> Recent Photo</label><br>
-                    <input type="file">
-                </div>
-                <div class="content">
-                    <label> HSC Certificate</label><br>
-                    <input type="file">
-                </div>
-                <div class="content">
-                    <label> SSC Certificate</label><br>
-                    <input type="file">
-                </div>
-                <div class="content">
-                    <label> All Semistar Certificate</label><br>
-                    <input type="file">
-                </div>
-                <div class="btn">
-                    <button type="button" id="back1"> back</button>
-                    <button type="submit">submit</button>
-                </div>
-            </div>
-        </form>
-
-    </div>
+    function validate() {
+      let firstname = document.myform.firstname.value;
+      let lastname = document.myform.lastname.value;
+      let dob = document.myform.dob.value;
+      let email = document.myform.email.value;
+      let firstnamef = document.myform.firstnamef.value;
+      let lastnamef = document.myform.lastnamef.value;
+      let firstnamem = document.myform.firstnamem.value;
+      let lastnamem = document.myform.lastnamem.value;
+      let gender = document.myform.gender.value;
+      let nationality = document.myform.nationality.value;
+      let street = document.myform.street.value;
+      let city = document.myform.city.value;
+      let country = document.myform.country.value;
+      let phone = document.myform.phone.value;
+      let mobile = document.myform.mob.value;
 
 
 
 
-    <script>
-        let form1 = document.getElementById('form1');
-        let form2 = document.getElementById('form2');
-        let form3 = document.getElementById('form3');
+      // if (firstname === '' || lastname === '') {
+      //   errormsg("name", " Can not be blank");
+      //   return false;
+      // }
+      // else if (!(firstname.match(/^[A-Za-z]+$/)) || !(lastname.match(/^[A-Za-z]+$/))) {
+      //   errormsg("name", " Use only character");
+      //   return false;
+      // }
+      // else if (!(firstname.match(/^[A-Z]/))) {
+      //   errormsg("name", " Should starts with uppercase");
+      //   return false;
+      // }
+      // else {
+      //   errormsg("name", "")
+      // }
+      // if (dob === "") {
+      //   errormsg("dob", " Input a date")
+      //   return false;
+      // }
+      // else {
+      //   errormsg("dob", "")
+      // }
+      // if (email === "") {
+      //   errormsg("email", " Can not be blank")
+      //   return false
+      // }
+      // else if ((verify(email))) {
+      //   errormsg("email", " Enter a valid mail");
+      //   return false;
+      // } else {
+      //   errormsg("email", "")
+      // }
+      // if (firstnamef === '' || lastnamef === '') {
+      //   errormsg("fathername", " Can not be blank");
+      //   return false;
+      // }
+      // else if (!(firstnamef.length > 4)) {
+      //   errormsg("fathername", " Must be greaterthan 4");
+      //   return false;
+      // }
+      // else if (!(firstnamef.match(/^[A-Za-z]+$/)) || !(lastnamef.match(/^[A-Za-z]+$/))) {
+      //   errormsg("fathername", " Use only character");
+      //   return false;
+      // }
+      // else if (!(firstnamef.match(/^[A-Z]/))) {
+      //   errormsg("fathername", " Should starts with uppercase");
+      //   return false;
+      // }
+      // else {
+      //   errormsg("fathername", "")
+      // }
+      // if (firstnamem === '' || lastnamem === '') {
+      //   errormsg("mothername", " Can not be blank");
+      //   return false;
+      // }
+      // else if (!(firstnamem.length > 4)) {
+      //   errormsg("mothername", " Must be greaterthan 5");
+      //   return false;
+      // }
+      // else if (!(firstnamem.match(/^[A-Za-z]+$/)) || !(lastnamem.match(/^[A-Za-z]+$/))) {
+      //   errormsg("mothername", " Use only character");
+      //   return false;
+      // }
+      // else if (!(firstnamem.match(/^[A-Z]/))) {
+      //   errormsg("mothername", " Should starts with uppercase");
+      //   return false;
+      // }
+      // else {
+      //   errormsg("mothername", "")
+      // }
+      // if (gender === '') {
+      //   errormsg("gender", " Select one")
+      //   return false;
+      // }
+      // else {
+      //   errormsg("gender", "")
+      // }
 
-        let next = document.getElementById("next");
-        let back = document.getElementById("back");
-        let next1 = document.getElementById("next1");
-        let back1 = document.getElementById("back1");
+      // if (nationality === '') {
+      //   errormsg("nationality", " Enter your Nation")
+      //   return false;
+      // }
+      // else if (!(nationality.match(/^[A-Za-z]+$/))) {
+      //   errormsg("nationality", " Use only character");
+      //   return false;
+      // }
+      // else if (!(nationality.match(/^[A-Z]/))) {
+      //   errormsg("nationality", " Should starts with uppercase");
+      //   return false;
+      // }
+      // else {
+      //   errormsg("nationality", " ")
+      // }
+      // if (street === '') {
+      //   errormsg("adress", " Enter your street")
+      //   return false;
+      // }
+      // else if (!(street.match(/^[a-zA-Z_ ]*$/))) {
+      //   errormsg("adress", " Use only character");
+      //   return false;
+      // }
+      // else if (!(street.match(/^[A-Z]/))) {
+      //   errormsg("adress", " Should starts with uppercase");
+      //   return false;
+      // }
+      // else if (!(street.length > 4)) {
+      //   errormsg("adress", " Street Must be greaterthan 5");
+      //   return false;
+      // }
+      // else {
+      //   errormsg("adress", " ")
+      // }
+      // if (city === "") {
+      //   errormsg("adress", " Enter your city")
+      //   return false;
+      // }
+      // else if (!(city.match(/^[A-Za-z]+$/))) {
+      //   errormsg("adress", " Use only character");
+      //   return false;
+      // }
+      // else if (!(city.length > 4)) {
+      //   errormsg("adress", " City Must be greaterthan 5");
+      //   return false;
+      // }
+      // else {
+      //   errormsg("adress", " ")
+      // }
+      // if (country === "") {
+      //   errormsg("adress", " Select one country")
+      //   return false;
+      // }
+      // else {
+      //   errormsg("adress", " ");
+      // }
+      // if (mobile === "") {
+      //   errormsg("mobile", " Enter a number")
+      //   return false;
+      // }
+
+      // else if (!(mobile.length === 10) || !(mobile.match(/^[6-9][0-9]{9}$/))) {
+      //   errormsg("mobile", " Enter a valid number")
+      //   return false;
+      // }
+      // else {
+      //   errormsg("mobile", " ")
+      // }
+      // if (phone === "") {
+      //   errormsg("phone", " ");
+      //   return true;
+      // }
+      // else if (!(phone.length === 10) || !(phone.match(/^[6-9][0-9]{9}$/))) {
+      //   errormsg("phone", " Enter a valid number")
+      //   return false;
+      // }
+      // else {
+      //   errormsg("phone", " ")
+      // }
+      return true;
+    }
+
+    function valid_form2() {
+      let hsc = document.myform.hsc.value;
+      let hscboard = document.myform.HSC_Board.value;
+      let hscp = document.myform.hscp.value;
+      let ssc = document.myform.ssc.value;
+      let sscboard = document.myform.SSC_Board.value;
+      let sscp = document.myform.sscp.value;
+      let currentboard = document.myform.Current_Board.value;
+      let current = document.myform.current.value;
+      let currentp = document.myform.currentp.value;
+      let backlog = document.myform.backlog.value;
 
 
+      // if (hsc === "") {
+      //   errormsg("hsc", " Enter your Institution")
+      //   return false;
+      // }
+      // else if (hsc.length < 5 || hsc.length > 20) {
+      //   errormsg("hsc", " Must between 5 to 20")
+      //   return false;
+      // }
+      // else if (!(hsc.match(/^[a-zA-Z_ ]*$/))) {
+      //   errormsg("hsc", " Use only character");
+      //   return false;
+      // }
+      // else {
+      //   errormsg("hsc", "")
+      // }
+      // if (hscboard === "") {
+      //   errormsg("hscboard", " Select one board")
+      //   return false;
+      // }
+      // else {
+      //   errormsg("hscboard", "")
+      // }
+      // if (hscp === "" || hscp > 100) {
+      //   errormsg("hscp", " must be greater than 0 and less than 100")
+      //   return false;
+      // }
+      // else {
+      //   errormsg("hscp", "")
+      // }
+      // if (ssc === "") {
+      //   errormsg("ssc", " Enter your Institution")
+      //   return false;
+      // }
+      // else if (ssc.length < 5 || hsc.length > 20) {
+      //   errormsg("ssc", " Must between 5 to 20")
+      //   return false;
+      // }
+      // else if (!(ssc.match(/^[a-zA-Z_ ]*$/))) {
+      //   errormsg("ssc", " Use only character");
+      //   return false;
+      // }
 
-        next.addEventListener("click", () => {
-            form1.style.left = "2000px";
-            form2.style.left = " 0px";
-        })
-        back.addEventListener("click", () => {
-            form1.style.left = "0px";
-            form2.style.left = " 2000px";
+      // else {
+      //   errormsg("ssc", "")
+      // }
+      // if (sscboard === "") {
+      //   errormsg("sscboard", " Select one board")
+      //   return false;
+      // }
+      // else {
+      //   errormsg("sscboard", "")
+      // }
+      // if (sscp === "" || sscp > 100) {
+      //   errormsg("sscp", " must be greater than 0 and less than 100")
+      //   return false;
+      // }
+      // else {
+      //   errormsg("sscp", "")
+      // }
+      // if (currentboard === "") {
+      //   errormsg("currentboard", " Select one board")
+      //   return false;
+      // }
+      // else {
+      //   errormsg("currentboard", "")
+      // }
+      // if (current === "") {
+      //   errormsg("current", " Enter your Institution")
+      //   return false;
+      // }
+      // else if (current.length < 5 || current.length > 30) {
+      //   errormsg("current", " Must between 5 to 30")
+      //   return false;
+      // }
+      // else if (!(current.match(/^[a-zA-Z_ ]*$/))) {
+      //   errormsg("current", " Use only character");
+      //   return false;
+      // }
+      // else {
+      //   errormsg("current", "")
+      // }
+      // if (currentp === "" || currentp > 100) {
+      //   errormsg("currentp", " Must be greater than 0 and less than 100")
+      //   return false;
+      // }
+      // else {
+      //   errormsg("currentp", "")
+      // }
+      // if (backlog === "") {
+      //   errormsg("backlog", "  ")
+      //   return true;
+      // }
+      // else if (backlog > 5) {
+      //   errormsg("backlog", " Not more than 5");
+      //   return false;
+      // }
+      // else {
+      //   errormsg("backlog", " ")
+      // }
+      return true;
+    }
 
-        })
-        next1.addEventListener("click", () => {
-            form2.style.left = "2000px";
-            form3.style.left = " 0px";
 
-        })
-        back1.addEventListener("click", () => {
-            form2.style.left = "0px";
-            form3.style.left = " 2000px";
+    next.addEventListener('click', function (e) {
+      console.log(validate());
+      if (validate()) {
+        nextpage1();
+      }
+    })
 
-        })
+    back.addEventListener("click", () => {
+      form1.style.left = "0px";
+      form2.style.left = " 2000px";
+    })
 
-    </script>
+    next1.addEventListener("click", () => {
+      // valid_form2();
+      if (valid_form2()) {
+        nextpage2();
+      }
+    })
+
+    back1.addEventListener("click", () => {
+      form2.style.left = "0px";
+      form3.style.left = " 2000px";
+    })
+  </script>
 
 </body>
 
