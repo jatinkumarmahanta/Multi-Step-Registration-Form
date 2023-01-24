@@ -217,163 +217,163 @@
 
 
 
-      // if (firstname === '' || lastname === '') {
-      //   errormsg("name", " Can not be blank");
-      //   return false;
-      // }
-      // else if (!(firstname.match(/^[A-Za-z]+$/)) || !(lastname.match(/^[A-Za-z]+$/))) {
-      //   errormsg("name", " Use only character");
-      //   return false;
-      // }
-      // else if (!(firstname.match(/^[A-Z]/))) {
-      //   errormsg("name", " Should starts with uppercase");
-      //   return false;
-      // }
-      // else {
-      //   errormsg("name", "")
-      // }
-      // if (dob === "") {
-      //   errormsg("dob", " Input a date")
-      //   return false;
-      // }
-      // else {
-      //   errormsg("dob", "")
-      // }
-      // if (email === "") {
-      //   errormsg("email", " Can not be blank")
-      //   return false
-      // }
-      // else if ((verify(email))) {
-      //   errormsg("email", " Enter a valid mail");
-      //   return false;
-      // } else {
-      //   errormsg("email", "")
-      // }
-      // if (firstnamef === '' || lastnamef === '') {
-      //   errormsg("fathername", " Can not be blank");
-      //   return false;
-      // }
-      // else if (!(firstnamef.length > 4)) {
-      //   errormsg("fathername", " Must be greaterthan 4");
-      //   return false;
-      // }
-      // else if (!(firstnamef.match(/^[A-Za-z]+$/)) || !(lastnamef.match(/^[A-Za-z]+$/))) {
-      //   errormsg("fathername", " Use only character");
-      //   return false;
-      // }
-      // else if (!(firstnamef.match(/^[A-Z]/))) {
-      //   errormsg("fathername", " Should starts with uppercase");
-      //   return false;
-      // }
-      // else {
-      //   errormsg("fathername", "")
-      // }
-      // if (firstnamem === '' || lastnamem === '') {
-      //   errormsg("mothername", " Can not be blank");
-      //   return false;
-      // }
-      // else if (!(firstnamem.length > 4)) {
-      //   errormsg("mothername", " Must be greaterthan 5");
-      //   return false;
-      // }
-      // else if (!(firstnamem.match(/^[A-Za-z]+$/)) || !(lastnamem.match(/^[A-Za-z]+$/))) {
-      //   errormsg("mothername", " Use only character");
-      //   return false;
-      // }
-      // else if (!(firstnamem.match(/^[A-Z]/))) {
-      //   errormsg("mothername", " Should starts with uppercase");
-      //   return false;
-      // }
-      // else {
-      //   errormsg("mothername", "")
-      // }
-      // if (gender === '') {
-      //   errormsg("gender", " Select one")
-      //   return false;
-      // }
-      // else {
-      //   errormsg("gender", "")
-      // }
+      if (firstname === '' || lastname === '') {
+        errormsg("name", " Can not be blank");
+        return false;
+      }
+      else if (!(firstname.match(/^[A-Za-z]+$/)) || !(lastname.match(/^[A-Za-z]+$/))) {
+        errormsg("name", " Use only character");
+        return false;
+      }
+      else if (!(firstname.match(/^[A-Z]/))) {
+        errormsg("name", " Should starts with uppercase");
+        return false;
+      }
+      else {
+        errormsg("name", "")
+      }
+      if (dob === "") {
+        errormsg("dob", " Input a date")
+        return false;
+      }
+      else {
+        errormsg("dob", "")
+      }
+      if (email === "") {
+        errormsg("email", " Can not be blank")
+        return false
+      }
+      else if ((verify(email))) {
+        errormsg("email", " Enter a valid mail");
+        return false;
+      } else {
+        errormsg("email", "")
+      }
+      if (firstnamef === '' || lastnamef === '') {
+        errormsg("fathername", " Can not be blank");
+        return false;
+      }
+      else if (!(firstnamef.length > 4)) {
+        errormsg("fathername", " Must be greaterthan 4");
+        return false;
+      }
+      else if (!(firstnamef.match(/^[A-Za-z]+$/)) || !(lastnamef.match(/^[A-Za-z]+$/))) {
+        errormsg("fathername", " Use only character");
+        return false;
+      }
+      else if (!(firstnamef.match(/^[A-Z]/))) {
+        errormsg("fathername", " Should starts with uppercase");
+        return false;
+      }
+      else {
+        errormsg("fathername", "")
+      }
+      if (firstnamem === '' || lastnamem === '') {
+        errormsg("mothername", " Can not be blank");
+        return false;
+      }
+      else if (!(firstnamem.length > 4)) {
+        errormsg("mothername", " Must be greaterthan 5");
+        return false;
+      }
+      else if (!(firstnamem.match(/^[A-Za-z]+$/)) || !(lastnamem.match(/^[A-Za-z]+$/))) {
+        errormsg("mothername", " Use only character");
+        return false;
+      }
+      else if (!(firstnamem.match(/^[A-Z]/))) {
+        errormsg("mothername", " Should starts with uppercase");
+        return false;
+      }
+      else {
+        errormsg("mothername", "")
+      }
+      if (gender === '') {
+        errormsg("gender", " Select one")
+        return false;
+      }
+      else {
+        errormsg("gender", "")
+      }
 
-      // if (nationality === '') {
-      //   errormsg("nationality", " Enter your Nation")
-      //   return false;
-      // }
-      // else if (!(nationality.match(/^[A-Za-z]+$/))) {
-      //   errormsg("nationality", " Use only character");
-      //   return false;
-      // }
-      // else if (!(nationality.match(/^[A-Z]/))) {
-      //   errormsg("nationality", " Should starts with uppercase");
-      //   return false;
-      // }
-      // else {
-      //   errormsg("nationality", " ")
-      // }
-      // if (street === '') {
-      //   errormsg("adress", " Enter your street")
-      //   return false;
-      // }
-      // else if (!(street.match(/^[a-zA-Z_ ]*$/))) {
-      //   errormsg("adress", " Use only character");
-      //   return false;
-      // }
-      // else if (!(street.match(/^[A-Z]/))) {
-      //   errormsg("adress", " Should starts with uppercase");
-      //   return false;
-      // }
-      // else if (!(street.length > 4)) {
-      //   errormsg("adress", " Street Must be greaterthan 5");
-      //   return false;
-      // }
-      // else {
-      //   errormsg("adress", " ")
-      // }
-      // if (city === "") {
-      //   errormsg("adress", " Enter your city")
-      //   return false;
-      // }
-      // else if (!(city.match(/^[A-Za-z]+$/))) {
-      //   errormsg("adress", " Use only character");
-      //   return false;
-      // }
-      // else if (!(city.length > 4)) {
-      //   errormsg("adress", " City Must be greaterthan 5");
-      //   return false;
-      // }
-      // else {
-      //   errormsg("adress", " ")
-      // }
-      // if (country === "") {
-      //   errormsg("adress", " Select one country")
-      //   return false;
-      // }
-      // else {
-      //   errormsg("adress", " ");
-      // }
-      // if (mobile === "") {
-      //   errormsg("mobile", " Enter a number")
-      //   return false;
-      // }
+      if (nationality === '') {
+        errormsg("nationality", " Enter your Nation")
+        return false;
+      }
+      else if (!(nationality.match(/^[A-Za-z]+$/))) {
+        errormsg("nationality", " Use only character");
+        return false;
+      }
+      else if (!(nationality.match(/^[A-Z]/))) {
+        errormsg("nationality", " Should starts with uppercase");
+        return false;
+      }
+      else {
+        errormsg("nationality", " ")
+      }
+      if (street === '') {
+        errormsg("adress", " Enter your street")
+        return false;
+      }
+      else if (!(street.match(/^[a-zA-Z_ ]*$/))) {
+        errormsg("adress", " Use only character");
+        return false;
+      }
+      else if (!(street.match(/^[A-Z]/))) {
+        errormsg("adress", " Should starts with uppercase");
+        return false;
+      }
+      else if (!(street.length > 4)) {
+        errormsg("adress", " Street Must be greaterthan 5");
+        return false;
+      }
+      else {
+        errormsg("adress", " ")
+      }
+      if (city === "") {
+        errormsg("adress", " Enter your city")
+        return false;
+      }
+      else if (!(city.match(/^[A-Za-z]+$/))) {
+        errormsg("adress", " Use only character");
+        return false;
+      }
+      else if (!(city.length > 4)) {
+        errormsg("adress", " City Must be greaterthan 5");
+        return false;
+      }
+      else {
+        errormsg("adress", " ")
+      }
+      if (country === "") {
+        errormsg("adress", " Select one country")
+        return false;
+      }
+      else {
+        errormsg("adress", " ");
+      }
+      if (mobile === "") {
+        errormsg("mobile", " Enter a number")
+        return false;
+      }
 
-      // else if (!(mobile.length === 10) || !(mobile.match(/^[6-9][0-9]{9}$/))) {
-      //   errormsg("mobile", " Enter a valid number")
-      //   return false;
-      // }
-      // else {
-      //   errormsg("mobile", " ")
-      // }
-      // if (phone === "") {
-      //   errormsg("phone", " ");
-      //   return true;
-      // }
-      // else if (!(phone.length === 10) || !(phone.match(/^[6-9][0-9]{9}$/))) {
-      //   errormsg("phone", " Enter a valid number")
-      //   return false;
-      // }
-      // else {
-      //   errormsg("phone", " ")
-      // }
+      else if (!(mobile.length === 10) || !(mobile.match(/^[6-9][0-9]{9}$/))) {
+        errormsg("mobile", " Enter a valid number")
+        return false;
+      }
+      else {
+        errormsg("mobile", " ")
+      }
+      if (phone === "") {
+        errormsg("phone", " ");
+        return true;
+      }
+      else if (!(phone.length === 10) || !(phone.match(/^[6-9][0-9]{9}$/))) {
+        errormsg("phone", " Enter a valid number")
+        return false;
+      }
+      else {
+        errormsg("phone", " ")
+      }
       return true;
     }
 
@@ -390,105 +390,105 @@
       let backlog = document.myform.backlog.value;
 
 
-      // if (hsc === "") {
-      //   errormsg("hsc", " Enter your Institution")
-      //   return false;
-      // }
-      // else if (hsc.length < 5 || hsc.length > 20) {
-      //   errormsg("hsc", " Must between 5 to 20")
-      //   return false;
-      // }
-      // else if (!(hsc.match(/^[a-zA-Z_ ]*$/))) {
-      //   errormsg("hsc", " Use only character");
-      //   return false;
-      // }
-      // else {
-      //   errormsg("hsc", "")
-      // }
-      // if (hscboard === "") {
-      //   errormsg("hscboard", " Select one board")
-      //   return false;
-      // }
-      // else {
-      //   errormsg("hscboard", "")
-      // }
-      // if (hscp === "" || hscp > 100) {
-      //   errormsg("hscp", " must be greater than 0 and less than 100")
-      //   return false;
-      // }
-      // else {
-      //   errormsg("hscp", "")
-      // }
-      // if (ssc === "") {
-      //   errormsg("ssc", " Enter your Institution")
-      //   return false;
-      // }
-      // else if (ssc.length < 5 || hsc.length > 20) {
-      //   errormsg("ssc", " Must between 5 to 20")
-      //   return false;
-      // }
-      // else if (!(ssc.match(/^[a-zA-Z_ ]*$/))) {
-      //   errormsg("ssc", " Use only character");
-      //   return false;
-      // }
+      if (hsc === "") {
+        errormsg("hsc", " Enter your Institution")
+        return false;
+      }
+      else if (hsc.length < 5 || hsc.length > 20) {
+        errormsg("hsc", " Must between 5 to 20")
+        return false;
+      }
+      else if (!(hsc.match(/^[a-zA-Z_ ]*$/))) {
+        errormsg("hsc", " Use only character");
+        return false;
+      }
+      else {
+        errormsg("hsc", "")
+      }
+      if (hscboard === "") {
+        errormsg("hscboard", " Select one board")
+        return false;
+      }
+      else {
+        errormsg("hscboard", "")
+      }
+      if (hscp === "" || hscp > 100) {
+        errormsg("hscp", " must be greater than 0 and less than 100")
+        return false;
+      }
+      else {
+        errormsg("hscp", "")
+      }
+      if (ssc === "") {
+        errormsg("ssc", " Enter your Institution")
+        return false;
+      }
+      else if (ssc.length < 5 || hsc.length > 20) {
+        errormsg("ssc", " Must between 5 to 20")
+        return false;
+      }
+      else if (!(ssc.match(/^[a-zA-Z_ ]*$/))) {
+        errormsg("ssc", " Use only character");
+        return false;
+      }
 
-      // else {
-      //   errormsg("ssc", "")
-      // }
-      // if (sscboard === "") {
-      //   errormsg("sscboard", " Select one board")
-      //   return false;
-      // }
-      // else {
-      //   errormsg("sscboard", "")
-      // }
-      // if (sscp === "" || sscp > 100) {
-      //   errormsg("sscp", " must be greater than 0 and less than 100")
-      //   return false;
-      // }
-      // else {
-      //   errormsg("sscp", "")
-      // }
-      // if (currentboard === "") {
-      //   errormsg("currentboard", " Select one board")
-      //   return false;
-      // }
-      // else {
-      //   errormsg("currentboard", "")
-      // }
-      // if (current === "") {
-      //   errormsg("current", " Enter your Institution")
-      //   return false;
-      // }
-      // else if (current.length < 5 || current.length > 30) {
-      //   errormsg("current", " Must between 5 to 30")
-      //   return false;
-      // }
-      // else if (!(current.match(/^[a-zA-Z_ ]*$/))) {
-      //   errormsg("current", " Use only character");
-      //   return false;
-      // }
-      // else {
-      //   errormsg("current", "")
-      // }
-      // if (currentp === "" || currentp > 100) {
-      //   errormsg("currentp", " Must be greater than 0 and less than 100")
-      //   return false;
-      // }
-      // else {
-      //   errormsg("currentp", "")
-      // }
-      // if (backlog === "") {
-      //   errormsg("backlog", "  ")
-      //   return true;
-      // }
-      // else if (backlog > 5) {
-      //   errormsg("backlog", " Not more than 5");
-      //   return false;
-      // }
-      // else {
-      //   errormsg("backlog", " ")
-      // }
+      else {
+        errormsg("ssc", "")
+      }
+      if (sscboard === "") {
+        errormsg("sscboard", " Select one board")
+        return false;
+      }
+      else {
+        errormsg("sscboard", "")
+      }
+      if (sscp === "" || sscp > 100) {
+        errormsg("sscp", " must be greater than 0 and less than 100")
+        return false;
+      }
+      else {
+        errormsg("sscp", "")
+      }
+      if (currentboard === "") {
+        errormsg("currentboard", " Select one board")
+        return false;
+      }
+      else {
+        errormsg("currentboard", "")
+      }
+      if (current === "") {
+        errormsg("current", " Enter your Institution")
+        return false;
+      }
+      else if (current.length < 5 || current.length > 30) {
+        errormsg("current", " Must between 5 to 30")
+        return false;
+      }
+      else if (!(current.match(/^[a-zA-Z_ ]*$/))) {
+        errormsg("current", " Use only character");
+        return false;
+      }
+      else {
+        errormsg("current", "")
+      }
+      if (currentp === "" || currentp > 100) {
+        errormsg("currentp", " Must be greater than 0 and less than 100")
+        return false;
+      }
+      else {
+        errormsg("currentp", "")
+      }
+      if (backlog === "") {
+        errormsg("backlog", "  ")
+        return true;
+      }
+      else if (backlog > 5) {
+        errormsg("backlog", " Not more than 5");
+        return false;
+      }
+      else {
+        errormsg("backlog", " ")
+      }
       return true;
     }
 
